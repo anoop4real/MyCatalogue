@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animations View Controller-->
+        <scene sceneID="ESI-sy-32h">
+            <objects>
+                <viewController storyboardIdentifier="Animations" id="qmz-Qp-Yl8" customClass="AnimationsViewController" customModule="MyCatalogue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dMB-xG-Nwo"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgG-Fy-97a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ubf-TV-YUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-B9-sO8">
+                                <state key="normal" title="Shake"/>
+                                <connections>
+                                    <action selector="shake:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="dC4-6Q-g6z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypG-5N-UmQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="DJN-D1-muj"/>
+                                </constraints>
+                                <state key="normal" title="Fade"/>
+                                <connections>
+                                    <action selector="fade:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="Hoo-yz-jqE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-YD-mTB">
+                                <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="move:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="3iQ-l9-leh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Off-Qe-YfW">
+                                <state key="normal" title="Rotate"/>
+                                <connections>
+                                    <action selector="rotate:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="aIt-Ln-qZD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oO8-x2-g24">
+                                <state key="normal" title="Scale"/>
+                                <connections>
+                                    <action selector="scale:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="5tb-3e-y2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-gm-1tK">
+                                <state key="normal" title="Scale&amp;Rotate"/>
+                                <connections>
+                                    <action selector="scaleAndRotate:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="ZJ5-gt-QFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbi-h6-GAe">
+                                <state key="normal" title="RippleIt"/>
+                                <connections>
+                                    <action selector="rippleIt:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="k6t-Sk-SOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVI-pr-TSp">
+                                <state key="normal" title="AddNewView"/>
+                                <connections>
+                                    <action selector="addView:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="36i-oz-Igq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCc-gg-kRT">
+                                <state key="normal" title="SpringIt"/>
+                                <connections>
+                                    <action selector="springIt:" destination="qmz-Qp-Yl8" eventType="touchUpInside" id="DW0-4g-lS9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley" translatesAutoresizingMaskIntoConstraints="NO" id="CPg-Ol-6IF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Efi-o5-Si9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hCc-gg-kRT" firstAttribute="top" secondItem="pVI-pr-TSp" secondAttribute="bottom" constant="8" symbolic="YES" id="2fr-Di-y8A"/>
+                            <constraint firstItem="ad8-B9-sO8" firstAttribute="centerX" secondItem="ypG-5N-UmQ" secondAttribute="centerX" id="2tS-eb-qbu"/>
+                            <constraint firstItem="CPg-Ol-6IF" firstAttribute="bottom" secondItem="ad8-B9-sO8" secondAttribute="bottom" id="5Y5-Vy-HdM"/>
+                            <constraint firstItem="d8f-YD-mTB" firstAttribute="top" secondItem="ypG-5N-UmQ" secondAttribute="bottom" constant="2" id="5j8-zn-I1s"/>
+                            <constraint firstItem="pVI-pr-TSp" firstAttribute="top" secondItem="qbi-h6-GAe" secondAttribute="bottom" constant="8" symbolic="YES" id="8DG-Ff-XE5"/>
+                            <constraint firstItem="oO8-x2-g24" firstAttribute="top" secondItem="Off-Qe-YfW" secondAttribute="bottom" constant="8" symbolic="YES" id="CD7-cl-MKq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ad8-B9-sO8" secondAttribute="trailing" constant="29" id="MPf-ac-qbT"/>
+                            <constraint firstItem="Off-Qe-YfW" firstAttribute="top" secondItem="d8f-YD-mTB" secondAttribute="bottom" constant="8" symbolic="YES" id="Rft-GY-WKg"/>
+                            <constraint firstItem="Off-Qe-YfW" firstAttribute="centerX" secondItem="oO8-x2-g24" secondAttribute="centerX" id="TRf-ZI-Lif"/>
+                            <constraint firstItem="gdu-gm-1tK" firstAttribute="top" secondItem="oO8-x2-g24" secondAttribute="bottom" constant="8" symbolic="YES" id="UjZ-9n-Ot5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d8f-YD-mTB" secondAttribute="trailing" constant="28" id="Vuj-tg-uhm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gdu-gm-1tK" secondAttribute="trailing" constant="13" id="ZG3-EG-oEp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pVI-pr-TSp" secondAttribute="trailing" constant="17" id="aQv-Xy-l9M"/>
+                            <constraint firstItem="ypG-5N-UmQ" firstAttribute="top" secondItem="ad8-B9-sO8" secondAttribute="bottom" constant="8" symbolic="YES" id="e32-Q4-akl"/>
+                            <constraint firstItem="gdu-gm-1tK" firstAttribute="centerX" secondItem="qbi-h6-GAe" secondAttribute="centerX" id="fSt-fz-52a"/>
+                            <constraint firstItem="ad8-B9-sO8" firstAttribute="leading" secondItem="CPg-Ol-6IF" secondAttribute="trailing" constant="90" id="g7C-bz-hqf"/>
+                            <constraint firstItem="ad8-B9-sO8" firstAttribute="top" secondItem="dMB-xG-Nwo" secondAttribute="bottom" constant="128" id="kK4-Rc-6Zi"/>
+                            <constraint firstItem="qbi-h6-GAe" firstAttribute="top" secondItem="gdu-gm-1tK" secondAttribute="bottom" constant="8" symbolic="YES" id="maX-S7-SfS"/>
+                            <constraint firstItem="ypG-5N-UmQ" firstAttribute="trailing" secondItem="Off-Qe-YfW" secondAttribute="trailing" id="nA0-h1-ZI7"/>
+                            <constraint firstItem="hCc-gg-kRT" firstAttribute="trailing" secondItem="d8f-YD-mTB" secondAttribute="trailing" id="vA0-fq-cqf"/>
+                            <constraint firstItem="vgG-Fy-97a" firstAttribute="top" secondItem="qbi-h6-GAe" secondAttribute="bottom" constant="267" id="yVV-Ug-lNs"/>
+                            <constraint firstItem="CPg-Ol-6IF" firstAttribute="top" secondItem="dMB-xG-Nwo" secondAttribute="bottom" constant="94" id="yy2-xk-aFh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="smiley" destination="CPg-Ol-6IF" id="3Gl-nc-R6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXF-7G-5GG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207.19999999999999" y="-110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smiley" width="800" height="800"/>
+    </resources>
+</document>

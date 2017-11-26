@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="1YS-X3-JfB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pedometer-->
+        <scene sceneID="wrM-i4-eGb">
+            <objects>
+                <viewController storyboardIdentifier="Pedometer" title="Pedometer" id="1YS-X3-JfB" customClass="AMPPedometerVC" customModule="MyCatalogue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fAQ-UU-K0I"/>
+                        <viewControllerLayoutGuide type="bottom" id="O4N-mh-jYZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WRk-nF-57e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="21" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-oq-Hqh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="7Aj-fk-PDq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="63" placeholderIntrinsicHeight="21" text="Steps :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-it-hPJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sW3-Ai-bMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="69" placeholderIntrinsicHeight="21" text="Activity:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3o-s9-cOf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="68" placeholderIntrinsicHeight="21" text="activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-5f-lrV">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="75" placeholderIntrinsicHeight="21" text="54321" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-ml-E6A">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FpD-LV-UcO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.50980392159999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vPt-ml-E6A" secondAttribute="trailing" constant="12" id="1X4-KG-lCZ"/>
+                            <constraint firstItem="Q3E-oq-Hqh" firstAttribute="centerX" secondItem="WRk-nF-57e" secondAttribute="centerX" constant="3" id="2pk-xd-OIK"/>
+                            <constraint firstItem="gl7-it-hPJ" firstAttribute="leading" secondItem="WRk-nF-57e" secondAttribute="leadingMargin" constant="4" id="4bt-z8-mTR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOU-5f-lrV" secondAttribute="trailing" constant="18" id="7GO-xP-7mK"/>
+                            <constraint firstItem="Q3E-oq-Hqh" firstAttribute="top" secondItem="fAQ-UU-K0I" secondAttribute="bottom" constant="93" id="AF8-uM-I3X"/>
+                            <constraint firstItem="vPt-ml-E6A" firstAttribute="top" secondItem="Q3E-oq-Hqh" secondAttribute="bottom" constant="46" id="Rum-IP-S1E"/>
+                            <constraint firstItem="gl7-it-hPJ" firstAttribute="leading" secondItem="P3o-s9-cOf" secondAttribute="leading" id="c2p-YC-4w6"/>
+                            <constraint firstItem="gl7-it-hPJ" firstAttribute="top" secondItem="Q3E-oq-Hqh" secondAttribute="bottom" constant="46" id="hVK-v5-BMD"/>
+                            <constraint firstItem="YOU-5f-lrV" firstAttribute="top" secondItem="vPt-ml-E6A" secondAttribute="bottom" constant="51" id="nId-rE-Tsz"/>
+                            <constraint firstItem="P3o-s9-cOf" firstAttribute="top" secondItem="gl7-it-hPJ" secondAttribute="bottom" constant="52" id="py1-yi-XGO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityLabel" destination="YOU-5f-lrV" id="3sz-SW-Iw2"/>
+                        <outlet property="stepCounter" destination="vPt-ml-E6A" id="78x-LU-mAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enz-sR-0zf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.266666666666666" y="293.46666666666664"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
